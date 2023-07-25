@@ -14,48 +14,70 @@ const questions = [
       "Update employee",
       "Finish",
     ],
-    // Set this option to true to enable arrow key navigation
     allowArrowKeyNavigation: true,
   },
+];
+
+const departmentQuestions = [
   {
     type: "input",
     message: "Add the name of the department:",
     name: "department_name",
   },
+];
+
+const roleQuestions = [
   {
     type: "input",
-    message: "Add the first name of the employee:",
-    name: "emp_firstName",
+    message: "Enter the title of the role:",
+    name: "role_title",
   },
   {
     type: "input",
-    message: "Add the last name of the employee:",
-    name: "emp_lastName",
+    message: "Enter the salary of the role:",
+    name: "role_salary",
   },
   {
     type: "input",
-    message: "Add the role of the employee:",
-    name: "emp_role",
+    message: "Enter the department ID for the role:",
+    name: "role_department_id",
+  },
+];
+
+const employeeQuestions = [
+  {
+    type: "input",
+    message: "Enter the first name of the employee:",
+    name: "employee_first_name",
   },
   {
     type: "input",
-    message: "Add the manager id of the employee:",
-    name: "emp_manager",
+    message: "Enter the last name of the employee:",
+    name: "employee_last_name",
   },
   {
     type: "input",
-    message: "Add the name of the role:",
-    name: "role_name",
+    message: "Enter the role ID for the employee:",
+    name: "employee_role_id",
   },
   {
     type: "input",
-    message: "Please select employee you want to update:",
-    name: "emp_update",
+    message:
+      "Enter the manager ID for the employee (if applicable, otherwise leave empty):",
+    name: "employee_manager_id",
+  },
+];
+
+const updateEmployeeRoleQuestions = [
+  {
+    type: "input",
+    message: "Enter the employee ID you want to update:",
+    name: "employee_id",
   },
   {
     type: "input",
-    message: "What is the updated role of the employee?",
-    name: "update_emp",
+    message: "Enter the new role ID for the employee:",
+    name: "new_role_id",
   },
 ];
 
