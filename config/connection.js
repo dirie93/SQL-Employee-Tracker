@@ -4,11 +4,9 @@ const mysql = require("mysql2");
 const db = mysql.createConnection(
   {
     host: "localhost",
-    // SQL Username
     user: "root",
-    // SQL Password
-    password: "",
-    database: "employee_tracker",
+    password: "root123?",
+    database: "employee_tracker_db",
   },
   console.log("Successfully connected to employee tracker database")
 );

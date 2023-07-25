@@ -14,6 +14,8 @@ const questions = [
       "Update employee",
       "Finish",
     ],
+    // Set this option to true to enable arrow key navigation
+    allowArrowKeyNavigation: true,
   },
   {
     type: "input",
@@ -45,7 +47,6 @@ const questions = [
     message: "Add the name of the role:",
     name: "role_name",
   },
-
   {
     type: "input",
     message: "Please select employee you want to update:",
